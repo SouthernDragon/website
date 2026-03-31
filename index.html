@@ -3,132 +3,212 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Southern Dragon</title>
+  <title>Your Name | PhD Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
   <style>
-    body {
+    :root {
+      --bg: #0a0a0a;
+      --text: #eaeaea;
+      --muted: #9ca3af;
+      --accent: #e11d48;
+      --line: #1f1f1f;
+    }
+
+    * {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: #e5e7eb;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: auto;
+      padding: 40px 20px;
     }
 
     header {
-      background: #020617;
-      padding: 20px;
-      text-align: center;
-      border-bottom: 1px solid #1f2933;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 80px;
     }
 
     header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-      color: #38bdf8;
-    }
-
-    nav {
-      margin-top: 10px;
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: 0.5px;
     }
 
     nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #94a3b8;
-      font-weight: bold;
+      margin-left: 20px;
+      font-size: 0.9rem;
+      color: var(--muted);
     }
 
     nav a:hover {
-      color: #38bdf8;
+      color: var(--text);
     }
 
     .hero {
-      padding: 80px 20px;
-      text-align: center;
+      margin-bottom: 100px;
     }
 
     .hero h2 {
-      font-size: 2rem;
-      margin-bottom: 10px;
+      font-size: 2.2rem;
+      font-weight: 500;
+      margin-bottom: 15px;
     }
 
     .hero p {
+      color: var(--muted);
       max-width: 600px;
-      margin: auto;
-      color: #cbd5f5;
     }
 
-    .section {
-      padding: 60px 20px;
-      max-width: 900px;
-      margin: auto;
+    section {
+      margin-bottom: 80px;
     }
 
-    .section h3 {
-      color: #38bdf8;
-      margin-bottom: 20px;
+    section h3 {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--muted);
+      margin-bottom: 25px;
     }
 
-    .card {
-      background: #020617;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-      border: 1px solid #1f2937;
+    .item {
+      margin-bottom: 25px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .item h4 {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .item span {
+      display: block;
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    .item p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-top: 6px;
     }
 
     footer {
-      text-align: center;
-      padding: 20px;
-      border-top: 1px solid #1f2937;
-      color: #64748b;
+      border-top: 1px solid var(--line);
+      padding-top: 30px;
+      font-size: 0.85rem;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .links a {
+      margin-left: 15px;
+    }
+
+    .links a:hover {
+      color: var(--text);
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Southern Dragon</h1>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+<div class="container">
 
-<section class="hero">
-  <h2>Welcome</h2>
-  <p>A clean, minimal personal website inspired by Southern Dragon. Customize this to showcase your work, research, or portfolio.</p>
-</section>
+  <header>
+    <h1>Your Name</h1>
+    <nav>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<section id="about" class="section">
-  <h3>About</h3>
-  <div class="card">
-    <p>Write about yourself here. Your background, interests, and what you do.</p>
-  </div>
-</section>
+  <section class="hero">
+    <h2>PhD Researcher in Neurobiology & Biomechanics</h2>
+    <p>
+      I study the intersection of neural systems, animal behaviour, and biomechanics.
+      My work focuses on understanding how biological systems generate adaptive movement
+      and decision-making in complex environments.
+    </p>
+  </section>
 
-<section id="projects" class="section">
-  <h3>Projects</h3>
-  <div class="card">
-    <h4>Project One</h4>
-    <p>Short description of your project.</p>
-  </div>
-  <div class="card">
-    <h4>Project Two</h4>
-    <p>Short description of your project.</p>
-  </div>
-</section>
+  <section id="research">
+    <h3>Research</h3>
 
-<section id="contact" class="section">
-  <h3>Contact</h3>
-  <div class="card">
-    <p>Email: your@email.com</p>
-    <p>GitHub: github.com/yourusername</p>
-  </div>
-</section>
+    <div class="item">
+      <h4>Locomotion and Neural Control</h4>
+      <span>PhD Project</span>
+      <p>Investigating how neural circuits coordinate movement in animals across varying environmental constraints.</p>
+    </div>
 
-<footer>
-  <p>© 2026 Southern Dragon Inspired Site</p>
-</footer>
+    <div class="item">
+      <h4>Biomechanics of Behaviour</h4>
+      <span>Ongoing Work</span>
+      <p>Studying the physical principles underlying behavioural strategies and efficiency in motion.</p>
+    </div>
+
+  </section>
+
+  <section id="publications">
+    <h3>Publications</h3>
+
+    <div class="item">
+      <h4>Author et al. (2025)</h4>
+      <span>Journal Name</span>
+      <p>Short description of your publication or key finding.</p>
+    </div>
+
+    <div class="item">
+      <h4>Author et al. (2024)</h4>
+      <span>Conference / Preprint</span>
+      <p>Brief description of the contribution.</p>
+    </div>
+
+  </section>
+
+  <section id="contact">
+    <h3>Contact</h3>
+
+    <div class="item">
+      <p>Email: your@email.com</p>
+      <p>Google Scholar | ORCID | GitHub</p>
+    </div>
+
+  </section>
+
+  <footer>
+    <div>© 2026 Your Name</div>
+    <div class="links">
+      <a href="#">CV</a>
+      <a href="#">Scholar</a>
+      <a href="#">GitHub</a>
+    </div>
+  </footer>
+
+</div>
 
 </body>
 </html>
